@@ -65,6 +65,7 @@ function NextPage() {
         <div className='flex row'>
           <div className='col-sm-12 col-md-6'>
             <Image
+            className='img-fluid'   
               src='/contact.png'
               width={470}
               height={500}
@@ -72,7 +73,7 @@ function NextPage() {
             />
           </div>
           <div className='contact col-sm-12 col-md-6'>
-            <form style={{ width: '50vh', marginTop: '15vh', marginLeft: '15vh' }}>
+            <form style={{ maxWidth: '50vh', marginTop: '15vh', marginLeft: '15vh' }}>
               <div style={{ marginTop: '70px' }}>
                 <label className='text-white form-label'>Name</label>
               </div>
@@ -107,7 +108,7 @@ function NextPage() {
                 <button className='btn'
                   style={{
                     backgroundColor: '#8E3F76 ',
-                    width: '50vh',
+                    maxWidth: '50vh',
                     height: '6vh',
                     padding: '2px',
                     paddingLeft: '15px',
