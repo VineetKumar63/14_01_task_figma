@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+.idea span{
+    font-size: 66px;
+    font-weight:700;
+}
+.idea .s2{
+    color: rgb(249 115 22);
+    color: #cfc547;
+
+text-shadow: 10px 10px 25px rgb(81,67,21),
+    -10px 10px 25px rgb(81,67,21),
+    -10px -10px 25px rgb(81,67,21),
+    10px -10px 25px rgb(81,67,21);
+}
+.idea .s1{
+    color: white;
+    animation: text-shadow 1.5s ease-in-out infinite;
+    font-size: 5em;
+    font-weight: 900;
+    line-height: 1;
+}
+.idea .s1:hover {
+    animation-play-state: paused;
+}
+
+.b1{
+    font-family: 'Merienda' ;
+      color: white;
+    margin-left: 7px;
+    font-size:medium;
+}
+
+.border{
+    height: 4px;
+    place-self:bottom;
+    background: rgb(69,2,142);
+background: linear-gradient(90deg, rgba(69,2,142,1) 0%, rgba(252,132,57,1) 100%);
+}
+
+body {
+    background: black;
+    color: white; }
+
+.web{
+    font-size: 40px;
+    font-weight:700;
+    text-decoration:#301562 ;
+    text-shadow: 3px 6px 7px rgba(238, 103, 103, 0.797), 
+    0px -4px 10px rgba(132, 130, 130, 0.3);
+}
+.lorem{
+    font-size: 15px;
+    margin: 2px;
+    margin-top: 2px; 
+}
+
+.loremColor{
+    background-color: #301562;
+background-image: radial-gradient(#301562 , #110b1f);
+}
+
+.webLorem{
+    background-color: #301562;
+background-image: linear-gradient(90deg, #301562 1%, #110b1f 20%);
+}
+.consultancy{
+    display: flex;
+    padding: 1px;
+    text-align: center;
+    border-radius: 3px;
+    margin: 30px 0 0px 20px ;
+}
+::placeholder{
+    color: white;
+}
+.consultancy button{
+   background: rgba(255, 106, 0, 0.888);
+}
+
+.service{
+    text-align: center;
+    font-size: 80px;
+    font-weight: 500;
+    background: radial-gradient(circle at center, #1d2e0e , #0c0d0d);;
+    text-shadow: 3px 6px 7px rgba(238, 103, 103, 0.797), 
+    0px -4px 10px rgba(132, 130, 130, 0.3);
+}
+
+.contact{
+    background-image: radial-gradient(circle at center,#55284f, #000000);
+}
+
+.con{
+    text-shadow: 3px 6px 7px rgba(238, 103, 103, 0.797), 
+    0px -4px 10px rgba(132, 130, 130, 0.3);
+}
+
+@keyframes text-shadow {
+    0% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+
+    20% {  
+        transform: translateY(-1em);
+        text-shadow: 
+            0 0.125em 0 #0c2ffb, 
+            0 0.25em 0 #2cfcfd, 
+            0 -0.125em 0 #fb203b, 
+    }
+
+    40% {  
+        transform: translateY(0.5em);
+        text-shadow: 
+            0 -0.0625em 0 #0c2ffb, 
+            0 -0.125em 0 #2cfcfd, 
+            0 0.0625em 0 #fb203b, 
+    }
+    
+   60% {
+        transform: translateY(-0.25em);
+        text-shadow: 
+            0 0.03125em 0 #0c2ffb, 
+            0 0.0625em 0 #2cfcfd, 
+            0 -0.03125em 0 #fb203b, 
+            0 -0.0625em 0 #fefc4b;
+    }
+
+    80% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+}
+
+.title{
+    --interval: 1s;
+    display: block;
+    text-shadow: 
+      0 0 10px var(--color1),
+      0 0 20px var(--color2),
+      0 0 40px var(--color3),
+      0 0 80px var(--color4);
+    will-change: filter, color;
+    filter: saturate(60%);
+    animation: flicker steps(100) var(--interval) 1s infinite;
+    color: lightyellow;
+  --color1: yellow;
+  --color2: gold;
+  --color3: orange;
+  --color4: darkred;
+  font-family: Sriracha;
+}
+@keyframes flicker {
+    50% {
+      color: white;
+      filter: saturate(200%) hue-rotate(20deg);
+    }
+  }
+
+  .webLorem span{
+    font-family: 'Merienda' ;
+  }
