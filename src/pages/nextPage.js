@@ -110,7 +110,6 @@ function NextPage() {
                     backgroundColor: '#8E3F76 ',
                     maxWidth: '50vh',
                     height: '6vh',
-                    padding: '2px',
                     paddingLeft: '15px',
                     borderRadius: '5px',
                     marginTop: '40px'
